@@ -18,6 +18,4 @@ function mostrarAumento()
 
  	alert ("Resultado del aumento del 10%  es "+aumento);
 
-
-
 }
