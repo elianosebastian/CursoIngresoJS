@@ -8,8 +8,8 @@ var peso2;
 var suma;
 
 
- mascota1 = "Labrador";
- mascota2 = "Pitbull";
+ mascota1 = prompt("Ingresar el nombre");
+ mascota2 = prompt("Ingresar el nombre de la otra mascota ");
 
  peso1 = prompt("Ingresar el peso de su "+mascota1);
  peso2 = prompt("Ingresar el peso de su "+mascota2);
