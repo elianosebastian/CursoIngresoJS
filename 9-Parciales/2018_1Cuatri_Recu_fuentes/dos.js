@@ -19,7 +19,7 @@ iva = totaldesc*21/100;
 
 total = iva + totaldesc
 
-alert ("tu compra es de $"+compra+" tenes un descuento del 10% queda en $ "+totaldesc+" mas el iva es $ "+total);
+alert ("Tu compra es de $"+compra+" tenes un descuento del 10% queda en $ "+totaldesc+" mas el iva es $ "+total);
 
 
 
