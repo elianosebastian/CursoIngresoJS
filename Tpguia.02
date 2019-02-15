@@ -1,0 +1,30 @@
+Trabajo practico "resuelve de la mejor manera"
+con nota conceptual
+1- En una carpeta vacia del disco , desde consola d: clonar su repositorio.
+2- En la consola ingresar a la carpeta clonada y verificar "su status"
+3- Abrir el sublime y cargar la carpeta clonada completa
+4-En el sublime abrir la carpeta
+CursoIngresoJS/9-Parciales/2018_1Cuatri_Recu_fuentes/
+5-Abrir los siguientes archivos:
+a. uno.js
+b. dos.js
+c. tres.js
+d. cuatro.js
+6-Ingresar al disco "material" en la carpeta "/### curso de ingreso" , encontraran un link
+7- cargar el formulario con el ejercicio "0" 
+
+ Al terminar cada ejercicio se debe acer la carga del formulario con el numero de ejercicio terminado . el commit y el push
+
+1- en uno.js 
+alert ("tenes dos mascotas xxxx y xxx que pesan xx y xx kilos , la suma de los kilos xx").
+
+2- en dos.js 
+ alert ("tu compra es de $xxx tenes un descuento del 10% queda en $xxx, mas el iva es $xxxxx")
+
+ 4- en tres.js
+ En un restaurante, un grupo de amigos quiere saber cuanto debe pagar cada uno del total, recordar que se debe agregar el 10% de propina , y que los precios no incluyen el iva (21%) , mostrar toda la informacion en un solo alert
+
+
+ 4-en cuatro.js
+ En una tienda de libros existe una oferta , por la cual , si la compra mas de dos libros tiene un 10% en el precio , y si ademas supera los $2000 se le hace un 15% de descuento adicional , recordar que si la compra es con tarjeta, se le debera agregar un 10% de recargo.
+ Mostrar en un solo alert toda la informacion

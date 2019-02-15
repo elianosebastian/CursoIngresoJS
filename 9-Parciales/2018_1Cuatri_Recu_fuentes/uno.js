@@ -19,6 +19,6 @@ var suma;
 
  suma = peso1 + peso2 ; 
 
- alert ("tenes dos mascotas "+mascota1+" y "+mascota2+" Que pesan "+peso1+"y "+peso2+" kilos y la suma es "+suma);
+ alert ("tenes dos mascotas "+mascota1+" y "+mascota2+" que pesan "+peso1+"y "+peso2+" kilos y la suma es "+suma);
 
 }
