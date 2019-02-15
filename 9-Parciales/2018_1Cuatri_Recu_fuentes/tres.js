@@ -7,6 +7,7 @@ var cantpersonas;
 var cantpagar;
 var iva;
 var ivatotal;
+
 	cantpersonas = prompt("Ingresar cantidad de personas");
 	total = prompt("Ingresar el total de su mesa");
 
@@ -21,5 +22,7 @@ var ivatotal;
 
 	cantpagar = ivatotal/cantpersonas;
 
- alert("Ustedes son "+cantpersonas+" Y su total es:  "+total+" con iva(21%)" +ivatotal+ " , mas 10% de propina: "+propina+" y cada uno debe pagar:  "+cantpagar);
+	cantpagartotal = cantpagar+propina;
+
+ alert("Ustedes son "+cantpersonas+" Y su total es:  "+total+" con iva(21%)" +ivatotal+ " , mas 10% de propina: "+propina+" y cada uno debe pagar:  "+cantpagartotal);
  }
