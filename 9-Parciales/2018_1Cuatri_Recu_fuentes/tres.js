@@ -5,16 +5,21 @@ var cantpersonas;
 var propina;
 var cantpersonas;
 var cantpagar;
-
+var iva;
+var ivatotal;
 	cantpersonas = prompt("Ingresar cantidad de personas");
 	total = prompt("Ingresar el total de su mesa");
 
 	cantpersonas = parseInt(cantpersonas);
 	total = parseInt(total);
+		
+	iva = total*21/100;
 
-	propina = total*10/100;
+	ivatotal = iva + total;
 
-	cantpagar = total/cantpersonas;
+	propina = ivatotal*10/100;
 
- alert("Ustedes son "+cantpersonas+" Y su total es:  "+total+" , mas 10% de propina: "+propina+" y cada uno debe pagar:  "+cantpagar);
+	cantpagar = ivatotal/cantpersonas;
+
+ alert("Ustedes son "+cantpersonas+" Y su total es:  "+total+" con iva(21%)" +ivatotal+ " , mas 10% de propina: "+propina+" y cada uno debe pagar:  "+cantpagar);
  }
