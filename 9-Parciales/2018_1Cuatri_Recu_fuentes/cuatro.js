@@ -1,13 +1,15 @@
 function mostrar()
 {
-
-	var cantlibros;
-	var precio;
-    var desc2;
-    var tipo;
-    var rec;
-    var rectotal;
-    var totaldesc;
+var cantlibros;
+var precio;
+var tipo;
+var desc;
+var totaldesc;
+var totalrec;
+var rec;
+var mensaje  = "Recibe descuento del 10%";
+var mensaje2 = "Recibe descuento del 15%";
+var mensaje3 = "Recibe recargo del 10% por utilizar tarjeta de credito";
 
 	cantlibros = prompt ("Cantidad de libros para comprar");
 	
@@ -15,29 +17,33 @@ function mostrar()
 	
 	precio = prompt ("Ingresar Precio Total de todos los libros");
     
-    precio = parseInt(precio);
+  precio = parseInt(precio);
 
-    tipo = prompt ("Pago con Debito (D) o Pago con Tarjeta (T)");
+  tipo = prompt ("Pago con Efectivo (D) o Pago con Tarjeta (T)");
 
 
-   if (cantlibros>2)
+   if (cantlibros>1 && precio<2000)
 			{
 			desc = precio *10/100;
 			totaldesc = precio - desc;
-			alert("Por la compra de mas de 2 libros usted se lleva un descuento del 10%. Su total:" +totaldesc);
-			}
-  				 else (precio>2000)
-  							 {
-   								desc2 = precio *25/100;
-   								totaldesc = precio - desc2;
-   								alert("Por la compra de mas de 2 libros y porque supero los 2000$ se le descontara un 25% . Su total:" +totaldesc);
-  								 }
-  		if (tipo="T") {
-    			rec = totaldesc*10/100; 	
-  				totalrec = precio + rec;
-  			alert ("Debido a que usted paga con tarjeta , 10% de recargo, le queda un total de :"+totalrec);
-  				}
+			alert(mensaje);
+      }
+  			 else if  (cantlibros>1 && precio>=2000)
+  				    {
+   								desc = precio *15/100;
+   								totaldesc = precio - desc;
+   								alert(mensaje2);
+  						}
+                  
+  		      if (tipo=="T") 
+              {
+    			     rec = totaldesc*10/100; 	
+  				     totalrec = totaldesc + rec;
+  		  	     alert(mensaje3);
+  		         } else   {
+                        totalrec = totaldesc;
+                        }
 
- alert("Usted compro "+cantlibros+" libros y el total de los mismos es: "+totalrec+" $");
+ alert("Usted compro "+cantlibros+" libros y el total de su compra es  : "+totalrec+" $");
 
 }
