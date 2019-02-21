@@ -27,7 +27,7 @@ function CalcularPrecio ()
 
 
   total = cantlamp*precio;
-  
+  /*
   if (cantlamp>=6)
  	  {
  	     desc  = total*50/100;
@@ -76,11 +76,88 @@ function CalcularPrecio ()
                                                               precioDescuento.value = preciototal;
                                                               }
   
-  if (preciototal > 120)
+  */ /*
+  switch (cantlamp){
+    case 5:
+       if (marca=="ArgentinaLuz") 
+       {
+        desc  = total*0.4;
+        precioDescuento.value = total;
+       } else {
+              desc  = total*0.3;
+              precioDescuento.value = total;
+              }
+     break;
+
+    case 4:
+      
+      if  (marca=="ArgentinaLuz" || marca=="FelipeLamparas" )  
+         {
+            desc  = total*0.25;
+            precioDescuento.value = total;
+         } else {
+                desc  = total*0.20;
+                precioDescuento.value = total;
+                }
+      break;  
+      
+    case 3: 
+
+        if (marca=="ArgentinaLuz")  
+          {
+            desc  = total*0.15;
+            precioDescuento.value = total;  
+          } else if (marca=="FelipeLamparas")  
+                    {
+                    desc  = total*0.1;
+                    precioDescuento.value = total;   
+                    } else {
+                            desc  = total*0.05;
+                            precioDescuento.value = total;
+                            }
+      break;
+      
+      default: 
+      if (cantlamp>=6)
+        {
+        desc  = total*0.5;
+        precioDescuento.value = total;   
+        } break;
+   */
+   switch (cantlamp){
+    case "5":
+        switch(marca){
+                  case "ArgentinaLuz":
+                   desc  = total*0.4;
+                   precioDescuento.value = total;
+                   default: 
+                   desc  = total*0.3;
+                   precioDescuento.value = total;
+                     }
+   break;
+   case "4":
+
+
+
+
+
+
+
+
+
+
+
+   }
+
+
+
+
+
+  if (total > 120)
   {
-  rec = preciototal*10/100;
-  recargototal = preciototal + rec;  
-  alert ("IIBB Usted pago : "+recargototal+"$ , siendo "+rec+"$ el impuesto que se pagó.");
+  rec = total*0.10;
+  recargototal = total + rec;
+  alert ("IIBB Usted pago : "+recargototal+"$ , siendo 10% el impuesto que se pagó.");
   }
 
 
