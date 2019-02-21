@@ -39,7 +39,7 @@ function CalcularPrecio ()
                preciototal = total - desc;
                precioDescuento.value = preciototal;
                }    
-               else if (cantlamp==5 && marca=="ArgentinaLuz") {
+               else if ( marca=="ArgentinaLuz") {
                        desc  = total*40/100;
                        preciototal = total - desc;
                        precioDescuento.value = preciototal;
