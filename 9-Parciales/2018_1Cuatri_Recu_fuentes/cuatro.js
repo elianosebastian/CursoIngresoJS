@@ -1,49 +1,68 @@
 function mostrar()
 {
-var cantlibros;
-var precio;
-var tipo;
-var desc;
-var totaldesc;
-var totalrec;
-var rec;
-var mensaje  = "Recibe descuento del 10%";
-var mensaje2 = "Recibe descuento del 15%";
-var mensaje3 = "Recibe recargo del 10% por utilizar tarjeta de credito";
+ var num1;
+ var num2;
+ var num3;
+ var num4;
+ var suma;
+ var masgrand;
 
-	cantlibros = prompt ("Cantidad de libros para comprar");
-	
-	cantlibros = parseInt(cantlibros);
-	
-	precio = prompt ("Ingresar Precio Total de todos los libros");
-    
-  precio = parseInt(precio);
+num1 =  prompt("Ingrese primer numero");
+num1 =  parseInt(num1);
+num2 =  prompt("Ingrese segundo numero");
+num2 =  parseInt(num2);
+num3 =  prompt("Ingrese tercer numero");
+num3 =  parseInt(num3);
+num4 =  prompt("Ingrese cuarto numero");
+num4 =  parseInt(num4);  
 
-  tipo = prompt ("Pago con Efectivo (D) o Pago con Tarjeta (T)");
+suma = num1+num2+num3+num4;
+ 
+
+  if (num1>num2 && num1>num3 && num1>num4)
+  {
+  masgrand=num1;
+  } else if (num2>num1 && num2>num3 && num2>num4 )
+      {
+     masgrand=num2;
+      } else if (num3>num1 && num3>num2 && num3>num4) {
+              masgrand=num3;
+             
+                            } else  {
+                                      masgrand=num4;
+                                      
+                                      }
+  
+  if (suma>100) 
+  { 
+  desc=suma*0.10;
+  total = suma - desc;
+  }  else { if (suma>50)
+             {
+             desc=suma*0.05;
+             total = suma - desc;
+             } 
+          }                 
+        else {
+              if (suma<50) 
+               {
+                rec=suma*0.15;
+                total = suma + rec;
+                }
+              }                          
+alert ("El mayor precio es")              
 
 
-   if (cantlibros>1 && precio<2000)
-			{
-			desc = precio *10/100;
-			totaldesc = precio - desc;
-			alert(mensaje);
-      }
-  			 else if  (cantlibros>1 && precio>=2000)
-  				    {
-   								desc = precio *15/100;
-   								totaldesc = precio - desc;
-   								alert(mensaje2);
-  						}
-                  
-  		      if (tipo=="T") 
-              {
-    			     rec = totaldesc*10/100; 	
-  				     totalrec = totaldesc + rec;
-  		  	     alert(mensaje3);
-  		         } else   {
-                        totalrec = totaldesc;
-                        }
 
- alert("Usted compro "+cantlibros+" libros y el total de su compra es  : "+totalrec+" $");
+
+
+
+
+
+
+
+
 
 }
+
+
