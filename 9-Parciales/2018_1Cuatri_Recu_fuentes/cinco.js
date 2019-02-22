@@ -6,7 +6,7 @@ function mostrar()
  	precio = prompt("Ingresar precio");
  	tipoPago =prompt("Ingrese el tipo de pago");
 
- 	switch (tipoPago) 
+ 	/*switch (tipoPago) 
  	{
  		case "Tarjeta Visa":
  		
@@ -20,15 +20,16 @@ function mostrar()
 
  		case "mercadoPago":
  		
- 		desc = precio - (precio*0.15);
+ 		desc = precio - (precio*0.10);
  		break;
 
- 		case "Paypal":
+ 		default:
  		
  		desc = precio - (precio*0.15);
  		break;
 
- 	}
+ 	}*/ 
+ 	// Corregir el ejercicio 
 
 
 
