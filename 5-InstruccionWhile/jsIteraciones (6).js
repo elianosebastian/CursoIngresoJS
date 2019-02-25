@@ -3,6 +3,9 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
+	
+
+
 
 
 

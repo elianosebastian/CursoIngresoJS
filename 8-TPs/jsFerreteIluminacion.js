@@ -27,104 +27,8 @@ function CalcularPrecio ()
 
 
   total = cantlamp*precio;
-  /*
-  if (cantlamp>=6)
- 	  {
- 	     desc  = total*50/100;
-       preciototal = total - desc;
-       precioDescuento.value = preciototal;                             
-     } else if (cantlamp==5 )
-               { 
-               desc  = total*30/100;
-               preciototal = total - desc;
-               precioDescuento.value = preciototal;
-               }    
-               else if ( marca=="ArgentinaLuz") {
-                       desc  = total*40/100;
-                       preciototal = total - desc;
-                       precioDescuento.value = preciototal;
-                       } 
-                       else if  (cantlamp==4 ) 
-                            {
-                            desc  = total*20/100;
-                            preciototal = total - desc;
-                            precioDescuento.value = preciototal;
-                              } else if (cantlamp==4 && marca=="ArgentinaLuz")
-                                  {
-                                   desc  = total*25/100;
-                                   preciototal = total - desc;
-                                   precioDescuento.value = preciototal; 
-                                  } else if (cantlamp==4 && marca=="FelipeLamparas")
-                                             {
-                                             desc  = total*25/100;
-                                             preciototal = total - desc;
-                                             precioDescuento.value = preciototal; 
-                                            } 
-                                         else if  (cantlamp==3 && marca=="ArgentinaLuz")
-                                                  {
-                                                  desc  = total*15/100;
-                                                  preciototal = total - desc;
-                                                  precioDescuento.value = preciototal; 
-                                                  } else if (cantlamp==3 && marca=="FelipeLamparas") 
-                                                      {
-                                                       desc  = total*10/100;
-                                                       preciototal = total - desc;
-                                                       precioDescuento.value = preciototal; 
-                                                       } else { 
-                                                              desc  = total*5/100;
-                                                              preciototal = total - desc;
-                                                              precioDescuento.value = preciototal;
-                                                              }
-  
-  */ /*
-  switch (cantlamp){
-    case 5:
-       if (marca=="ArgentinaLuz") 
-       {
-        desc  = total*0.4;
-        precioDescuento.value = total;
-       } else {
-              desc  = total*0.3;
-              precioDescuento.value = total;
-              }
-     break;
 
-    case 4:
-      
-      if  (marca=="ArgentinaLuz" || marca=="FelipeLamparas" )  
-         {
-            desc  = total*0.25;
-            precioDescuento.value = total;
-         } else {
-                desc  = total*0.20;
-                precioDescuento.value = total;
-                }
-      break;  
-      
-    case 3: 
-
-        if (marca=="ArgentinaLuz")  
-          {
-            desc  = total*0.15;
-            precioDescuento.value = total;  
-          } else if (marca=="FelipeLamparas")  
-                    {
-                    desc  = total*0.1;
-                    precioDescuento.value = total;   
-                    } else {
-                            desc  = total*0.05;
-                            precioDescuento.value = total;
-                            }
-      break;
-      
-      default: 
-      if (cantlamp>=6)
-        {
-        desc  = total*0.5;
-        precioDescuento.value = total;   
-        } break;
-   */
-   switch (cantlamp){
+ switch (cantlamp){
     case "5":
         switch(marca){
                   case "ArgentinaLuz":
@@ -136,22 +40,38 @@ function CalcularPrecio ()
                      }
    break;
    case "4":
-
-
-
-
-
-
-
-
-
-
-
-   }
-
-
-
-
+        switch(marca) {
+                     case "ArgentinaLuz":
+                     case "FelipeLamparas":     
+                     desc  = total*0.25;
+                     precioDescuento.value = total;
+                     default:
+                     desc  = total*0.2;
+                     precioDescuento.value = total;
+                      }
+  break;                      
+  case "3":
+        switch(marca){
+                     case "ArgentinaLuz":
+                     desc  = total*0.15;
+                     precioDescuento.value = total;
+                     break;
+                     case "FelipeLamparas":
+                     desc  = total*0.1;
+                     precioDescuento.value = total;
+                     break;
+                     default:
+                     desc  = total*0.05;
+                     precioDescuento.value = total;
+                     }
+  default:
+  if (cantlamp>=6)
+      {              
+        desc  = total*0.5;
+        precioDescuento.value = total;
+      }
+  }
+  
 
   if (total > 120)
   {

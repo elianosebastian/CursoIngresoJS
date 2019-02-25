@@ -22,16 +22,14 @@ suma = num1+num2+num3+num4;
   if (num1>num2 && num1>num3 && num1>num4)
   {
   masgrand=num1;
-  } else if (num2>num1 && num2>num3 && num2>num4 )
+  } else if (num2>num3 && num2>num4 )
       {
-     masgrand=num2;
-      } else if (num3>num1 && num3>num2 && num3>num4) {
-              masgrand=num3;
-             
+     	masgrand=num2;
+      } else if (num3>num4) {
+             				masgrand=num3;
                             } else  {
-                                      masgrand=num4;
-                                      
-                                      }
+                                    masgrand=num4;
+                                    }
   
   if (suma>100) 
   { 
@@ -50,7 +48,7 @@ suma = num1+num2+num3+num4;
                 total = suma + rec;
                 }
               }                          
-alert ("El mayor precio es")              
+alert ("El mayor precio es "+masgrand+" y el total queda en "+total);              
 
 
 
